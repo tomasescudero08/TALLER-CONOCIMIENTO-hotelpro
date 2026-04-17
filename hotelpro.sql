@@ -259,7 +259,7 @@ CREATE TABLE reserva (
 	 tarifa_aplicada FLOAT NOT NULL,
 	 deposito FLOAT NOT NULL,
 	 metodo_pago ENUM ('Efectivo', 'Transferencia', 'Tarjeta'),
-	 estado ENUM ('Confirmada', 'Cancelada', 'Completada')
+	 estado ENUM ('Confirmada', 'Cancelada', 'Completada', 'Pendiente')
 );
 
 INSERT INTO reserva (fecha_creacion,ID_cliente,fecha_llegada,fecha_salida,num_habitaciones,ID_tipo,adultos,ninos,tarifa_aplicada,deposito,metodo_pago,estado) VALUES
@@ -273,6 +273,7 @@ INSERT INTO reserva (fecha_creacion,ID_cliente,fecha_llegada,fecha_salida,num_ha
 ('2026-01-08',8,'2026-02-08','2026-02-10',1,8,2,0,140,50,'Efectivo','Completada'),
 ('2026-01-09',9,'2026-02-09','2026-02-11',1,9,4,0,32,10,'Transferencia','Confirmada'),
 ('2026-01-10',10,'2026-02-10','2026-02-12',1,10,5,2,50,15,'Tarjeta','Confirmada');
+('2027-01-10',10,'2026-02-10',1,10,5,2,50,15,'Tarjeta','Pendiente');
 
 CREATE TABLE solicitud_reserva (
 	 ID_solicitud_reserva INT PRIMARY KEY AUTO_INCREMENT,
