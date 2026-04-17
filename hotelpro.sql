@@ -272,9 +272,7 @@ INSERT INTO reserva (fecha_creacion,ID_cliente,fecha_llegada,fecha_salida,num_ha
 ('2026-01-07',7,'2026-02-07','2026-02-09',1,7,3,1,30,9,'Tarjeta','Confirmada'),
 ('2026-01-08',8,'2026-02-08','2026-02-10',1,8,2,0,140,50,'Efectivo','Completada'),
 ('2026-01-09',9,'2026-02-09','2026-02-11',1,9,4,0,32,10,'Transferencia','Confirmada'),
-('2026-01-10',10,'2026-02-10','2026-02-12',1,10,5,2,50,15,'Tarjeta','Confirmada');
-('2027-01-10',10,'2026-02-10',1,10,5,2,50,15,'Tarjeta','Pendiente');
-
+('2026-01-10',10,'2026-02-10','2026-02-12',1,10,5,2,50,15,'Tarjeta','Pendiente');
 CREATE TABLE solicitud_reserva (
 	 ID_solicitud_reserva INT PRIMARY KEY AUTO_INCREMENT,
 	 ID_reserva INT,
