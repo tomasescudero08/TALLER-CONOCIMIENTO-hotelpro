@@ -330,7 +330,7 @@ CREATE TABLE temporada (
 	 nombre ENUM ('Alta', 'Media', 'Baja'),
 	 fecha_inicio DATE,
 	 fecha_fin DATE,
-	 factorr VARCHAR (255)
+	 factorr float
 );
 
 INSERT INTO temporada (nombre, fecha_inicio, fecha_fin, factorr) VALUES
